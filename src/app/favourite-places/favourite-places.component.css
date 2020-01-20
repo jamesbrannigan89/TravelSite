@@ -1,0 +1,15 @@
+.card-deck{
+margin: 0 auto; 
+float: none; 
+margin-bottom: 10px; 
+
+}
+img{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+p,h5{
+    font-family: Arial;
+}
