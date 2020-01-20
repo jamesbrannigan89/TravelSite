@@ -7,6 +7,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FavouritePlacesComponent } from './favourite-places/favourite-places.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
