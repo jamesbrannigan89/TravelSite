@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { FavouritePlacesComponent } from './favourite-places/favourite-places.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     FooterComponent,
-    HomePageComponent
+    HomePageComponent,
+    FavouritePlacesComponent
   ],
   imports: [
     BrowserModule,
