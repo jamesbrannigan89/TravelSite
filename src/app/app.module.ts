@@ -9,6 +9,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FavouritePlacesComponent } from './favourite-places/favourite-places.component';
 import { from } from 'rxjs';
 import { CountriesVisitedComponent } from './countries-visited/countries-visited.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CountriesVisitedComponent } from './countries-visited/countries-visited
     FooterComponent,
     HomePageComponent,
     FavouritePlacesComponent,
-    CountriesVisitedComponent
+    CountriesVisitedComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
