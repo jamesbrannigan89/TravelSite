@@ -1,5 +1,7 @@
-.hero{
-    background-image: url('/assets/img/mostar.JPG') !important;
+.jumbotron{
+    margin-top: 15px;
+    background-image: url("/assets/img/mostar.JPG");
     background-size: cover;
-    background-position: center center;
+    height: 100%;
+    color: whitesmoke;
 }

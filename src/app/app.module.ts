@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FavouritePlacesComponent } from './favourite-places/favourite-places.component';
 import { from } from 'rxjs';
+import { CountriesVisitedComponent } from './countries-visited/countries-visited.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { from } from 'rxjs';
     NavBarComponent,
     FooterComponent,
     HomePageComponent,
-    FavouritePlacesComponent
+    FavouritePlacesComponent,
+    CountriesVisitedComponent
   ],
   imports: [
     BrowserModule,
