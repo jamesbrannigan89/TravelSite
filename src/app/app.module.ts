@@ -10,6 +10,7 @@ import { FavouritePlacesComponent } from './favourite-places/favourite-places.co
 import { from } from 'rxjs';
 import { CountriesVisitedComponent } from './countries-visited/countries-visited.component';
 import { ContactComponent } from './contact/contact.component';
+import { AustriaPageComponent } from './austria-page/austria-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     HomePageComponent,
     FavouritePlacesComponent,
     CountriesVisitedComponent,
-    ContactComponent
+    ContactComponent,
+    AustriaPageComponent
   ],
   imports: [
     BrowserModule,
