@@ -19,10 +19,16 @@ export class CountriesVisitedComponent implements OnInit {
       },
 
       {
-        id:2,
+        
         country:'Belgium',
-        description:'test',
+        description:'Visted 3 different cities ',
         imageUrl:"/assets/img/belgium.jpg"
+      },
+
+      {
+        country:'Bulgaria',
+        description:'We began our trip on Bulgaria',
+        imageUrl:"/assets/img/mostar.JPG"
       }
       
     ]

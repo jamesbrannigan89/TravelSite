@@ -1,7 +1,7 @@
-.card-deck{
-    margin: 0 auto; 
-    float: none; 
-    margin-bottom: 10px; 
+#card{
+    margin: 10px 50px 20px;
+    padding: 1em;
+   
     }
 
 img{
@@ -19,6 +19,4 @@ p,h5{
 	background-size: cover;
     background-repeat: no-repeat;
     color:whitesmoke;
-   
-
 }
