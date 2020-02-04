@@ -1,47 +1,19 @@
 <div class="jumbotron jumbotron-fluid ">
-        <div class="container">
-          <h1 class="display-4">Countries I have visted </h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
+  <div class="container">
+    <h1 class="display-4">Countries I have visted </h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
 </div>
 
-
-
-
-<div class="container ">
-<div class="row">
-    <div class="col-lg-4 mb-4">
-      <div class="card h-100 text-center">
-        <img class="card-img-top" src="/assets/img/austria.jpg" alt="Austria" title="Austria">
-        <div class="card-body">
-          <h4 class="card-title">Austria</h4>
-          <h6 class="card-subtitle mb-2 text-muted">We visited Austria three different times throught our trip and went to three different cities. Click below to see more photos of Austria.</h6>
-          <a class="nav-link"  routerLink="/austria-page"> <button class="button is-rounded">More photos  </button></a>
-        </div>
+<div class="row card-group">
+  <div class="col col-lg-3 col-md-8" *ngFor="let place of countries">
+    <div class="card h-100 text-center">
+      <img class="card-img-top" src={{place.imageUrl}} alt="Austria" title="Austria">
+      <div class="card-body">
+        <h4 class="card-title">{{place.country}}</h4>
+        <h6 class="card-subtitle mb-2 text-muted">{{place.description}}</h6>
+        <a class="nav-link" routerLink="/austria-page"> <button class="button is-rounded">More photos </button></a>
       </div>
     </div>
-
-    <div class="col-lg-4 mb-4">
-      <div class="card h-100 text-center">
-        <img class="card-img-top" src="/assets/img/belgium.jpg" >
-        <div class="card-body">
-          <h4 class="card-title">Belgium</h4>
-          <a class="nav-link"  routerLink="/"> <button class="button is-rounded">More photos </button></a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-lg-4 mb-4">
-      <div class="card h-100 text-center">
-        <img class="card-img-top" src="/assets/img/mostar.JPG" alt="Mostar" title="Mostar Bridge">
-        <div class="card-body">
-          <h4 class="card-title">Bosnia and Herzegovina</h4>
-          <p class="card-text">Stari Most, also known as Mostar Bridge, is a rebuilt 16th-century Ottoman bridge in the city of Mostar in Bosnia and Herzegovina that crosses the river Neretva and connects the two parts of the city.</p>
-        </div>
-      </div>
-    </div>
-  </div>    
-
-
-  
+  </div>
+</div>
