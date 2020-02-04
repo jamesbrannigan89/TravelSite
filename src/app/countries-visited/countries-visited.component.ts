@@ -15,7 +15,9 @@ export class CountriesVisitedComponent implements OnInit {
       //  image:'src="/assets/img/austria.jpg"',
         country:'Austria',
         description:'We visited Austria three different times throught our trip and went to three different cities. Click below to see more photos of Austria.',
-        imageUrl:"/assets/img/austria.jpg"
+        imageUrl:"/assets/img/austria.jpg",
+        pageUrl:'/austria-page'
+
       },
 
       {
@@ -28,7 +30,14 @@ export class CountriesVisitedComponent implements OnInit {
       {
         country:'Bulgaria',
         description:'We began our trip on Bulgaria',
-        imageUrl:"/assets/img/mostar.JPG"
+        imageUrl:"/assets/img/bulgaria.jpg"
+      },
+
+      {
+        country:'Croatia',
+        description:'Arrived in september',
+        imageUrl:"/assets/img/croatia.jpg"
+
       }
       
     ]
