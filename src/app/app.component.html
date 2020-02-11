@@ -4,4 +4,9 @@
 <router-outlet> </router-outlet>
 
 <app-footer></app-footer>
-  
+
+
+<agm-map [latitude]="latitude" [longitude]="longitude" >
+
+<agm-marker  [latitude]="latitude" [longitude]="longitude" *ngIf="locationChosen" (mapclick)="onChoseLocation(event)"> </agm-marker>
+</agm-map>
