@@ -25,13 +25,9 @@
 
     </div>
 </div>
+<br>
 
-<div>
-        <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
-                <agm-marker
-                  [latitude]="latitude"
-                  [longitude]="longitude"
-                  *ngIf="locationChosen"></agm-marker>
-            </agm-map>
-</div>
 
+    <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
+        <agm-marker [latitude]="latitude" [longitude]="longitude" *ngIf="locationChosen"></agm-marker>
+    </agm-map>

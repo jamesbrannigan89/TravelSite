@@ -1,0 +1,9 @@
+agm-map{
+    text-align: center;
+    height: 300px;
+    width: 500px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

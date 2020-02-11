@@ -1,21 +1,22 @@
 import { Injectable } from '@angular/core';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+
 
 @Injectable({
     providedIn: 'root'
   })
 export class MapService{
 
+   // API_KEY: string = 'AIzaSyD_iXwqNPhIVeqwjcAQ1puSXvClbPg6ciQ';
 
-  
     
-    latitude = 53.270962;
-    longitude = -9.062691;
-    locationChosen = false;
 
-    onChoseLocation(event) {
-        this.latitude = event.coords.lat;
-        this.longitude = event.coords.lng;
-        this.locationChosen = true;
-    }
+    
+    
+    
+
+    
 }
 

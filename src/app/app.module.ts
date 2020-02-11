@@ -13,6 +13,7 @@ import { CountriesVisitedComponent } from './countries-visited/countries-visited
 import { ContactComponent } from './contact/contact.component';
 import { AustriaPageComponent } from './austria-page/austria-page.component';
 import {MapService} from './Services/googleMap.service'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {MapService} from './Services/googleMap.service'
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
      //google maps key

@@ -8,12 +8,19 @@ import { MapService } from '../Services/googleMap.service';
 })
 export class AustriaPageComponent implements OnInit {
 
-  maps:any;
-  constructor(private googleMap:MapService) { 
-    this.maps = this.googleMap.onChoseLocation;
+ 
+
+    latitude = 48.210033;
+    longitude = 16.363449;
+    locationChosen = false;
+  
+    onChoseLocation(event) {
+
+        
+      this.latitude = event.coords.lat;
+      this.longitude = event.coords.lng;
+      this.locationChosen = true;
   }
-
-
   
 
   ngOnInit() {
