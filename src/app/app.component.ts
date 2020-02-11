@@ -14,10 +14,9 @@ export class AppComponent {
   longitude=-9.062691;
   locationChosen = false;
 
-  onChoseLocation(event){
-    console.log(event);
-    this.latitude = event.cords.lat;
-    this.longitude=event.cords.lng;
-    this.locationChosen =true;
+  onChoseLocation(event) {
+    this.latitude = event.coords.lat;
+    this.longitude = event.coords.lng;
+    this.locationChosen = true;
   }
 }
