@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MapService } from '../Services/googleMap.service';
 
 @Component({
   selector: 'app-austria-page',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AustriaPageComponent implements OnInit {
 
-  constructor() { }
+  maps:any;
+  constructor(private googleMap:MapService) { 
+    this.maps = this.googleMap.onChoseLocation;
+  }
+
+
+  
 
   ngOnInit() {
   }

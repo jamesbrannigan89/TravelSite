@@ -12,6 +12,7 @@ import { from } from 'rxjs';
 import { CountriesVisitedComponent } from './countries-visited/countries-visited.component';
 import { ContactComponent } from './contact/contact.component';
 import { AustriaPageComponent } from './austria-page/austria-page.component';
+import {MapService} from './Services/googleMap.service'
 
 @NgModule({
   declarations: [
@@ -28,11 +29,12 @@ import { AustriaPageComponent } from './austria-page/austria-page.component';
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
+     //google maps key
       apiKey:'AIzaSyD_iXwqNPhIVeqwjcAQ1puSXvClbPg6ciQ'
 
     })
   ],
-  providers: [],
+  providers: [MapService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
