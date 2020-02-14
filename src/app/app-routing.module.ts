@@ -26,8 +26,10 @@ const routes: Routes = [
 
   {
     path:'contact',
-    component:ContactComponent
+    component:ContactComponent,canDeactivate:['canLeavePage']
   },
+
+  
 
   { 
     path:'austria-page',

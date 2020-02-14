@@ -36,7 +36,17 @@ import { HttpClientModule } from '@angular/common/http';
 
     })
   ],
-  providers: [MapService],
+  providers: [MapService,
+    {provide:'canLeavePage',
+    useValue: checkStateOfContactPage
+    }
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function checkStateOfContactPage(component:ContactComponent){
+ if(component.contactPageState) return window.confirm('You have not sent your email. Do you want to leave the page?')
+ return true;
+}

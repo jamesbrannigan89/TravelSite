@@ -14,3 +14,7 @@
 h1,p{
     font-style: italic;
 }
+
+.btn{
+    margin: 5px;
+}
