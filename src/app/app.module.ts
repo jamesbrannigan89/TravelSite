@@ -14,6 +14,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AustriaPageComponent } from './austria-page/austria-page.component';
 import {MapService} from './Services/googleMap.service'
 import { HttpClientModule } from '@angular/common/http';
+import { SalzburgComponent} from './austria-page/salzburg/salzburg,component'
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     CountriesVisitedComponent,
     ContactComponent,
     AustriaPageComponent,
+    SalzburgComponent
+   
     
   ],
   imports: [
