@@ -14,4 +14,26 @@ export class FavouritePlacesComponent implements OnInit {
   ngOnInit() {
   }
 
+  favourites=[{
+    country:'Italy',
+    description:'We visited Rome in August',
+    imageUrl:"/assets/img/rome.JPG"
+  },
+
+  {
+    contry:'France',
+    description:'Point du hoc',
+    imageUrl:"/assets/img/pointDu.jpg"
+  },
+
+  {
+    contry:'Mostar',
+    description:'Mostar',
+    imageUrl:"/assets/img/mostar.JPG" 
+  },
+  
+
+
+   
+  ]
 }

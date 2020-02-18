@@ -9,33 +9,11 @@ import { AustriaPageComponent } from './austria-page/austria-page.component';
 
 
 const routes: Routes = [
-  {
-    path:'',
-    component:HomePageComponent
-  },
-
-  {
-    path:'favourite-places',
-    component:FavouritePlacesComponent
-  },
-
-  {
-    path:'countries-visited',
-    component:CountriesVisitedComponent
-  },
-
-  {
-    path:'contact',
-    component:ContactComponent,canDeactivate:['canLeavePage']
-  },
-
-  
-
-  { 
-    path:'austria-page',
-    component:AustriaPageComponent
-
-  }
+  {path:'',component:HomePageComponent},
+  {path:'favourite-places',component:FavouritePlacesComponent},
+  {path:'countries-visited',component:CountriesVisitedComponent},
+  {path:'contact',component:ContactComponent,canDeactivate:['canLeavePage']},
+  {path:'austria-page', component:AustriaPageComponent},
 
 
   

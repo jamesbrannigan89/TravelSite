@@ -1,33 +1,16 @@
-<div class="container">
-
-    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Austria</h1>
-
-    <hr class="mt-2 mb-5">
-
-    <div class="row text-center text-lg-left">
-
-        <div class="col-lg-3 col-md-4 col-6">
-            <img class="img-fluid img-thumbnail" src="/assets/img/austria1.JPG" alt="Austria Photo"
-                title="Lee at innsbruck">
+<div class="card-group">
+    <div class="card" *ngFor="let citiesVisted of austria">
+        <img class="card-img-top" src="{{citiesVisted?.imageUrl}}" alt="{{citiesVisted.imageAlt}}">
+        <div class="card-body">
+            <h5 class="card-title">{{citiesVisted?.city}}</h5>
+            <p class="card-text"> {{citiesVisted.description}}</p>
+            <button type="button" class="btn btn-primary">Small button</button>
         </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-            <img class="img-fluid img-thumbnail" src="/assets/img/austria2.JPG" alt="">
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-            <img class="img-fluid img-thumbnail" src="/assets/img/austria3.JPG" alt="">
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-            <img class="img-fluid img-thumbnail" src="/assets/img/austria3.JPG" alt="">
-        </div>
-
+        
     </div>
 </div>
-<br>
 
 
-    <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
-        <agm-marker [latitude]="latitude" [longitude]="longitude" *ngIf="locationChosen"></agm-marker>
-    </agm-map>
+<agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" *ngIf="locationChosen"></agm-marker>
+</agm-map>

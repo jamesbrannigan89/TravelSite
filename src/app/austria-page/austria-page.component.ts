@@ -10,8 +10,8 @@ export class AustriaPageComponent implements OnInit {
 
  
 
-    latitude = 48.210033;
-    longitude = 16.363449;
+    latitude = 47.5162;
+    longitude = 14.5501;
     locationChosen = false;
   
     onChoseLocation(event) {
@@ -25,5 +25,27 @@ export class AustriaPageComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  austria= [
+    {
+      city:'Salzburg',
+      imageUrl:"/assets/img/salzburg.jpg",
+      imageAlt:"Salzburg",
+      description:" A collection of photos from salzburg"
+    },
+
+    {
+      city:'Hallstatt',
+      description:" A collection of photos from Hallstat",
+      imageUrl:"/assets/img/hallstatt.jpg",
+      imageAlt:"Hallstat",
+    },
+
+    {
+      city:'Vienna',
+     imageUrl:"/assets/img/vienna.jpg",
+      description:" A collection of photos from Vienna"
+    }
+  ]
 
 }
