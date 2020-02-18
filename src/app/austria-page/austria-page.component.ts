@@ -23,11 +23,7 @@ export class AustriaPageComponent implements OnInit {
       this.locationChosen = true;
     }
 
-    citypage(){
-      this.router.navigate(['salzburg'])
-     
-
-    }
+  
   
 
   ngOnInit() {
@@ -38,7 +34,8 @@ export class AustriaPageComponent implements OnInit {
       city:'Salzburg',
       imageUrl:"/assets/img/salzburg.jpg",
       imageAlt:"Salzburg",
-      description:" A collection of photos from salzburg"
+      description:" A collection of photos from salzburg",
+      pageUrl:'/salzburg'
     },
 
     {
