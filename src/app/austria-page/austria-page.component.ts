@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MapService } from '../Services/googleMap.service';
+
 import { Router } from '@angular/router';
 
 @Component({
