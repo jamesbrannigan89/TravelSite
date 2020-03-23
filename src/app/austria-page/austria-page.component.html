@@ -1,15 +1,3 @@
-<div class="card-group">
-    <div class="card" *ngFor="let citiesVisted of austria">
-        <img class="card-img-top" src="{{citiesVisted?.imageUrl}}" alt="{{citiesVisted.imageAlt}}">
-        <div class="card-body">
-            <h5 class="card-title">{{citiesVisted?.city}}</h5>
-            <p class="card-text"> {{citiesVisted.description}}</p>
-            <button type="button" class="btn btn-primary"  [routerLink]="[citiesVisted.pageUrl]">Small button</button>
-           
-        </div>
-        
-    </div>
-</div>
 
 
 <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">

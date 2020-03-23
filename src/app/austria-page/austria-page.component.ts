@@ -29,27 +29,6 @@ export class AustriaPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  austria= [
-    {
-      city:'Salzburg',
-      imageUrl:"/assets/img/salzburg.jpg",
-      imageAlt:"Salzburg",
-      description:" A collection of photos from salzburg",
-      pageUrl:'/salzburg'
-    },
-
-    {
-      city:'Hallstatt',
-      description:" A collection of photos from Hallstat",
-      imageUrl:"/assets/img/hallstatt.jpg",
-      imageAlt:"Hallstat",
-    },
-
-    {
-      city:'Vienna',
-     imageUrl:"/assets/img/vienna.jpg",
-      description:" A collection of photos from Vienna"
-    }
-  ]
+  
 
 }
