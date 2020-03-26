@@ -8,7 +8,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { from } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
+import { CountriesVistedComponent } from './countries-visted/countries-visted.component'
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AboutComponent } from './about/about.component'
     AppComponent,
     NavBarComponent,
     HomePageComponent,
-    AboutComponent
+    AboutComponent,
+    CountriesVistedComponent
    
     
   ],
