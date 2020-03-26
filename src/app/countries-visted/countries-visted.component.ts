@@ -10,9 +10,24 @@ import { ICountries } from './countries';
 })
 export class CountriesVistedComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
+    this.filteredCountries = this.countries;
+    this.listFilter=''
+   }
 
+  _listFilert:string;
+  get listFilter():string{
+    return this._listFilert;
+  }
+
+  set listFilter(value:string){
+    this._listFilert=value;
+    this.filteredCountries= this.listFilter ? this.perfromFilter(this.listFilter) :this.countries;
+  }
+  
+
+  filteredCountries:ICountries[];
   countries:ICountries[]=[
     {
       name:'Austria',
@@ -33,21 +48,14 @@ export class CountriesVistedComponent implements OnInit {
       
     },
 
-   
-
-   
-
-   
-    
   ]
 
+  perfromFilter(filterBy:string):ICountries[]{
+    filterBy = filterBy.toLocaleLowerCase();
+    return this.countries.filter((countries:ICountries)=>
+      countries.name.toLocaleLowerCase().indexOf(filterBy) !==-1);
   
-
- 
-
-  
-
-
+  }
 
   ngOnInit() {
   }
