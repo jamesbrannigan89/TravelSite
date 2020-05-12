@@ -10,7 +10,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
-import { CountriesVistedComponent } from './countries-visted/countries-visted.component'
+import { CountriesVistedComponent } from './countries-visted/countries-visted.component';
+import { AustriaComponent } from './countries-visted/austria/austria.component'
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CountriesVistedComponent } from './countries-visted/countries-visted.co
     NavBarComponent,
     HomePageComponent,
     AboutComponent,
-    CountriesVistedComponent
+    CountriesVistedComponent,
+    AustriaComponent
    
     
   ],

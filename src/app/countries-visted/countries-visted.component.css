@@ -1,6 +1,13 @@
 
+.container{
+    margin-top: 2%;
+    margin-left: 20%;
 
+    background-color: #F0DEA6;
+    color:#660033 ;
+}
   
+
 .card-body{
     margin-bottom: 10%;
     text-align: center;

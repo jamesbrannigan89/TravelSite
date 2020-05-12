@@ -1,6 +1,6 @@
 <div class="container">
 
-
+<br>
   <div class='row'>
     <div class='col-md-2'>Filter by:</div>
     <div class='col-md-4'>
@@ -12,6 +12,9 @@
       <h4>Filtered by: {{listFilter}}</h4>
     </div>
   </div>
+
+
+  
   <br>
   <br>
 
@@ -26,7 +29,7 @@
       <div class="card-body">
         <h3 class="card-title">{{visted.name}}</h3>
         <p class="card-text">{{visted.description}}</p>
-        <button type="button" class="btn btn-primary">More Photos</button>
+        <button type="button" class="btn btn-primary" routerLink={{visted.pageUrl}} >More Photos</button>
 
         
       </div>

@@ -32,37 +32,42 @@ export class CountriesVistedComponent implements OnInit {
     {
       name:'Austria',
       image:'/assets/images/austria.jpg',
-      description:"We visted Austria on three different occasions. We went to Hallstat,Salzburg,Vienna and Innsbruck "
+      description:"We visted Austria on three different occasions. We went to Hallstat,Salzburg,Vienna and Innsbruck ",
+      pageUrl:'/austria-page'
       
     },
     {
       name:'Belgium',
       image:'/assets/images/belgium.jpg',
-      description:"H"
+      description:"",
+      pageUrl:'/austria-page'
       
     },
     {
       name:'Bosnia and Herzagonia ',
       image:'/assets/images/bosnia.jpg',
-      description:"H"
-      
+      description:"We visted Mostar and Sarajevo in September. We also did a day trip from Mostar to three different locations based around the ciy",
+      pageUrl:'/austria-page'
     },
     {
       name:'Bulgaria',
       image:'/assets/images/bosnia.jpg',
-      description:"H"
+      description:"H",
+      pageUrl:'/austria-page'
       
     },
     {
       name:'Croatia',
       image:'/assets/images/bosnia.jpg',
-      description:"H"
+      description:"H",
+      pageUrl:'/austria-page'
       
     },
     {
       name:'France',
       image:'/assets/images/bosnia.jpg',
-      description:"H"
+      description:"H",
+      pageUrl:'/austria-page'
       
     },
 
