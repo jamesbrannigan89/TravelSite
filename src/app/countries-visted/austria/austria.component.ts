@@ -12,4 +12,11 @@ export class AustriaComponent implements OnInit {
   ngOnInit() {
   }
 
+  countries=[
+    {
+      image:'/assets/images/austria.jpg',
+    }
+
+  ]
+   
 }

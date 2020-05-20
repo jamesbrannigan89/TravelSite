@@ -1,9 +1,31 @@
-<div class="container"> 
+
+
+<div class="inro">
+  <img src="assets/images/us.jpg" class="home">
+  <p>Lee and James Travel Site. This site will hold all photo from where we went travelling.</p>
+  
+</div>
+
+<hr>
+
+<div class="jumbotron">
  
-<img src="assets/images/us.jpg">
+</div>
 
-<p>Lee and James Travel Site.
-  This site will hold all photo from where we went travelling.
-    </p>
 
+
+
+<hr>
+
+<div class="container">
+  
+  <div *ngFor="let info of countries" class="mapMarker">
+
+    <a href="{{info.pageUrl}}" target="blank">
+      <i class="fas fa-map-marker-alt fa-3x"></i>
+
+      <h4 class="card-title">{{info.name}}</h4>
+    </a>
+
+  </div>
 </div>

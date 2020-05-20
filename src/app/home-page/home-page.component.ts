@@ -13,7 +13,28 @@ export class HomePageComponent implements OnInit {
   }
 
  
+countries =[
 
+{
+  name:'Bosnia',
+  pageUrl:'',
+},
+
+{
+  name:'Switzerland',
+  pageUrl:'',
+},
+
+{
+  name:'Italy',
+  pageUrl:'',
+},
+{
+  name:'Croatia',
+  pageUrl:'',
+},
+
+]
 
  
   
